@@ -1,0 +1,282 @@
+
+TABLE OF CONTENT
+
+1	History
+1.1	Early history
+1.2	PHP 3 and 4
+1.3	PHP 5
+1.4	PHP 6 and Unicode
+1.5	PHP 7
+1.6	Release history
+2	Mascot
+3	Syntax
+3.1	Data types
+3.2	Functions
+3.3	PHP Objects
+4	Implementations
+5	Licensing
+6	Development and community
+7	Installation and configuration
+8	Use
+9	Security
+10	See also
+11	References
+12	Further reading
+13	External links
+
+PICTURE
+
+1	scripthttps://en.wikipedia.org/w/load.php?debug=false&lang=en&modules=startup&only=scripts&skin=vector
+2	imghttps://upload.wikimedia.org/wikipedia/en/thumb/9/94/Symbol_support_vote.svg/19px-Symbol_support_vote.svg.png1920
+3	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sound-icon.svg/20px-Sound-icon.svg.png2015
+4	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/50px-PHP-logo.svg.png5027
+5	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/16px-Wikibooks-logo-en-noslogan.svg.png1616
+6	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Rasmus_Lerdorf_cropped.jpg/105px-Rasmus_Lerdorf_cropped.jpg105142
+7	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Andi_Gutmans_1.jpg/105px-Andi_Gutmans_1.jpg105142
+8	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Zeev_Suraski_2005_cropped.jpg/105px-Zeev_Suraski_2005_cropped.jpg105142
+9	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Custom-software-developement-php-net.JPG/220px-Custom-software-developement-php-net.JPG220170
+10	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Webysther_20160423_-_Elephpant.svg/200px-Webysther_20160423_-_Elephpant.svg.png200137
+11	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/8/82/LAMP_software_bundle.svg/400px-LAMP_software_bundle.svg.png400225
+12	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Scheme_dynamic_page_en.svg/400px-Scheme_dynamic_page_en.svg.png400130
+13	imghttps://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/32px-Portal-puzzle.svg.png3228
+14	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/8bit-dynamiclist_%28reversed%29.gif/28px-8bit-dynamiclist_%28reversed%29.gif2828
+15	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png2828
+16	imghttps://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/20px-Commons-logo.svg.png2027
+17	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/27px-Wikibooks-logo.svg.png2727
+18	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Wikiversity-logo-en.svg/27px-Wikiversity-logo-en.svg.png2724
+19	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/MediaWiki-notext.svg/27px-MediaWiki-notext.svg.png2721
+20	sourcehttps://upload.wikimedia.org/wikipedia/commons/f/fb/En-PHP.ogg
+21	sourcehttps://upload.wikimedia.org/wikipedia/commons/transcoded/f/fb/En-PHP.ogg/En-PHP.ogg.mp3
+22	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sound-icon.svg/45px-Sound-icon.svg.png4534
+23	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/10px-Blue_pencil.svg.png1010
+24	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/64px-PHP-logo.svg.png6435
+25	imghttps://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png1614
+26	imghttps://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png1216
+27	imghttps://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png1614
+28	imghttps://upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png1616
+29	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/16px-Symbol_book_class2.svg.png1616
+30	imghttps://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png1614
+31	imghttps://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png1216
+32	imghttps://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/16px-Portal-puzzle.svg.png1614
+33	imghttps://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/10px-Blue_pencil.svg.png1010
+34	imghttps://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x111
+35	imghttps://en.wikipedia.org/static/images/wikimedia-button.png8831
+36	imghttps://en.wikipedia.org/static/images/poweredby_mediawiki_88x31.png8831
+
+REFERENCE
+
+1	Lerdorf, Rasmus (2007-04-26). "PHP on Hormones – history of PHP presentation by Rasmus Lerdorf given at the MySQL Conference in Santa Clara, California". The Conversations Network. Retrieved 2009-12-11.
+2	"News Archive — 2018". 11 October 2018. PHP 7.2.11 Released. Retrieved 16 October 2018.
+3	"News Archive — 2018". 25 October 2018. PHP 7.3.0RC4 Released. Retrieved 25 October 2018.
+4	"PHP: Function arguments - Manual". secure.php.net.
+5	"History of PHP". php.net.
+6	"History of PHP and related projects". The PHP Group. Retrieved 2008-02-25.
+7	PHP Manual: Preface, www.php.net.
+8	"Introduction: What can PHP do?". PHP Manual. Retrieved 2009-03-05.
+9	"Embedding PHP in HTML". O'Reilly. 2001-05-03. Retrieved 2008-02-25.
+10	Jackson, Joab (2014-07-31). "PHP gets a formal specification, at last". ITworld. IDG.
+11	Lerdorf, Rasmus (2012-07-20). "I wonder why people keep writing that PHP was ever written in Perl. It never was. #php". Twitter. Retrieved 2014-09-04.
+12	Lerdorf, Rasmus (2007-04-26). "PHP on Hormones" (mp3). The Conversations Network. Retrieved 2009-06-22.
+13	Lerdorf, Rasmus (2007). "Slide 3". slides for 'PHP on Hormones' talk. The PHP Group. Retrieved 2009-06-22.
+14	Lerdorf, Rasmus (June 8, 1995). "Announce: Personal Home Page Tools (PHP Tools)". Retrieved 7 June 2011.
+15	Lerdorf, Rasmus (1995-06-08). "Announce: Personal Home Page Tools (PHP Tools)". Newsgroup: comp.infosystems.www.authoring.cgi. Retrieved 2006-09-17.
+16	"Rasmus Lerdorf, Senior Technical Yahoo: PHP, Behind the Mic". 2003-11-19. Archived from the original on 2013-07-28.
+17	"Problems with PHP". Retrieved 20 December 2010.
+18	"php.internals: Re: Function name consistency". news.php.net. 2013-12-28. Retrieved 2014-02-09.
+19	Rasmus Lerdorf (Dec 16, 2013). "Re: Flexible function naming". Newsgroup: php.internals. Retrieved December 26, 2013.
+20	"PHP — Acronym Meaning Vote". PHP.net. Archived from the original on August 15, 2000.
+21	"Zend Engine version 2.0: Feature Overview and Design". Zend Technologies Ltd. Retrieved 2006-09-17.
+22	"php.net 2007 news archive". The PHP Group. 2007-07-13. Retrieved 2008-02-22.
+23	Kerner, Sean Michael (2008-02-01). "PHP 4 is Dead—Long Live PHP 5". InternetNews. Retrieved 2008-03-16.
+24	Trachtenberg, Adam (2004-07-15). "Why PHP 5 Rocks!". O'Reilly. Retrieved 2008-02-22.
+25	"Late Static Binding in PHP". Digital Sandwich. 2006-02-23. Retrieved 2008-03-25.
+26	"Static Keyword". The PHP Group. Retrieved 2008-03-25.
+27	"GoPHP5". Archived from the original on 2011-07-17.
+28	GoPHP5. "PHP projects join forces to Go PHP 5" (PDF). GoPHP5 Press Release. Archived from the original (PDF) on 2009-12-10. Retrieved 2008-02-23.
+29	"GoPHP5". GoPHP5. Archived from the original on 2011-04-27. Retrieved 2008-02-22.
+30	"PHP Installation and Configuration". php.net. Retrieved 2013-10-29.
+31	"PHP for Windows: Binaries and sources releases (5.3)". php.net. Retrieved 2013-10-29.
+32	"PHP for Windows: Binaries and sources releases (5.4)". php.net. Retrieved 2013-10-29.
+33	"PHP for Windows: Binaries and sources releases (5.5)". php.net. Retrieved 2013-10-29.
+34	"Types: Strings (PHP Manual)". PHP.net. Retrieved 2013-09-22.
+35	"Details of the String Type (PHP Manual)". PHP.net. Retrieved 2013-09-22.
+36	Andrei Zmievski (2005-08-10). "PHP Unicode support design document (mailing list post)". Retrieved 2014-02-09.
+37	"PHP 5.5 or 6.0". Retrieved 2014-02-09.
+38	Andrei Zmievski. "The Good, the Bad, and the Ugly: What Happened to Unicode and PHP 6". Retrieved 2014-02-09.
+39	Rasmus Lerdorf (2010-03-11). "PHP 6 (mailing list post)". Retrieved 2014-02-07.
+40	"The Neverending Muppet Debate of PHP 6 v PHP 7".
+41	"RFC: Name of Next Release of PHP". php.net. 2014-07-07. Retrieved 2014-07-15.
+42	"Re: [PHP-DEV] [VOTE][RFC] Name of Next Release of PHP (again)". 2014-07-30. Retrieved 2014-07-30.
+43	[http://news.php.net/php.internals/73888 "php.internals: phpng: �Refactored PHP Engine with Big Performance I mprovement"]. news.php.net. replacement character in |title= at position 23 (help)
+44	"PHP: rfc:phpng". php.net. Retrieved 16 December 2014.
+45	"PHP: phpng". php.net. Retrieved 2014-07-15.
+46	"Merge branch 'ZendEngine3'". github.com. 2014-12-05. Retrieved 2014-12-05.
+47	"PHP: Release Process". 2011-06-20. Retrieved 2013-10-06.
+48	"PHP RFC: Exceptions in the engine (for PHP 7)". php.net. Retrieved 2015-05-21.
+49	"PHP RFC: Uniform Variable Syntax". php.net. 2014-05-31. Retrieved 2014-07-30.
+50	"Online PHP shell | 150+ versions + stats + vld + hhvm".
+51	"PHP RFC: Fix "foreach" behavior". php.net. Retrieved 2015-05-21.
+52	"PHP RFC: Constructor behaviour of internal classes". php.net. Retrieved 2015-05-21.
+53	"PHP RFC: Removal of dead or not yet PHP7 ported SAPIs and extensions". php.net. Retrieved 2015-05-21.
+54	"PHP RFC: Fix list() behavior inconsistency". php.net. Retrieved 2015-05-21.
+55	"PHP RFC: Remove alternative PHP tags". php.net. Retrieved 2015-05-21.
+56	"PHP RFC: Make defining multiple default cases in a switch a syntax error". php.net. Retrieved 2015-05-21.
+57	"PHP RFC: Remove hex support in numeric strings". php.net. Retrieved 2015-05-21.
+58	"PHP RFC: Integer Semantics". php.net. Retrieved 2015-05-21.
+59	"PHP RFC: ZPP Failure on Overflow". php.net. Retrieved 2015-05-21.
+60	"RFC: Return Types". php.net. 2015-01-27. Retrieved 2015-01-28.
+61	"RFC: Scalar Type Declarations". php.net. 2015-03-16. Retrieved 2015-03-17.
+62	"Unsupported Branches". php.net. Retrieved 2015-11-14.
+63	"PHP: PHP 4 ChangeLog". The PHP Group. 2008-01-03. Retrieved 2008-02-22.
+64	"Using PHP from the command line". PHP Manual. The PHP Group. Retrieved 2009-09-11.
+65	"PHP 4.4.0 Release Announcement". PHP Mannual. The PHP Group. Retrieved 2013-11-24.
+66	"PHP: PHP 5 ChangeLog". The PHP Group. 2007-11-08. Retrieved 2008-02-22.
+67	"PHP manual: PDO". The PHP Group. 2011-11-15. Retrieved 2011-11-15.
+68	"Built-in web server". Retrieved March 26, 2012.
+69	"Supported Versions". php.net. Retrieved 2017-12-13.
+70	"PHP 5.5.0 changes". php.net. Retrieved 2015-03-03.
+71	"Migrating from PHP 5.5.x to PHP 5.6.x". php.net. Retrieved 2014-03-24.
+72	"Resetting PHP 6". There have been books on the shelves purporting to cover PHP 6 since at least 2008. But, in March 2010, the PHP 6 release is not out — in fact, it is not even close to out. Recent events suggest that PHP 6 will not be released before 2011 — if, indeed, it is released at all.
+73	"PHP 7 moves full speed ahead". Recent versions of PHP have been part of the 5.x release series, but there will be no PHP 6. "We're going to skip [version] 6, because years ago, we had plans for a 6, but those plans were very different from what we're doing now," Gutmans said. Going right to version 7 avoids confusion.
+74	"News Archive – 2018: PHP 7.2.9 Released". php.net. 2018-08-16. Retrieved 2018-08-16.
+75	"PHP: rfc:size_t_and_int64_next". php.net. Retrieved 16 December 2014.
+76	"PHP: rfc:abstract_syntax_tree". php.net. Retrieved 16 December 2014.
+77	"PHP: rfc:closure_apply". php.net. Retrieved 16 December 2014.
+78	"PHP: rfc:integer_semantics". php.net. Retrieved 16 December 2014.
+79	"PHP: rfc:isset_ternary". php.net. Retrieved 16 December 2014.
+80	"RFC: Unicode Codepoint Escape Syntax". 2014-11-24. Retrieved 2014-12-19.
+81	"Combined Comparison (Spaceship) Operator". php.net. Retrieved 2015-05-21.
+82	"PHP RFC: Generator Delegation". php.net. Retrieved 2015-05-21.
+83	"PHP RFC: Anonymous Classes". php.net. Retrieved 2015-05-21.
+84	"PHP RFC: Easy User-land CSPRNG". php.net. Retrieved 2015-05-21.
+85	"PHP RFC: Group Use Declarations". php.net. Retrieved 2015-05-21.
+86	"PHP: rfc:void_return_type". php.net. 2015-11-09. Retrieved 2015-11-14.
+87	"PHP: rfc:class_constant_visibility". php.net. 2015-10-27. Retrieved 2015-12-08.
+88	"PHP: rfc:object-typehint". wiki.php.net.
+89	"PHP: rfc:libsodium". wiki.php.net.
+90	"PHP: rfc:allow-abstract-function-override". wiki.php.net.
+91	"PHP: rfc:parameter-no-type-variance". wiki.php.net.
+92	"PHP: todo:php73". wiki.php.net.
+93	"PHP: rfc:flexible_heredoc_nowdoc_syntaxes". wiki.php.net.
+94	"PHP: rfc:list_reference_assignment". wiki.php.net.
+95	"PHP: rfc:pcre2-migration". wiki.php.net.
+96	"PHP: hrtime - Manual". php.net.
+97	"PHP: ElePHPant". 4 Oct 2014. Retrieved 4 Oct 2014.
+98	"Redirecting…". wwphp-fb.github.io.
+99	"The PHP Mascot's Birth - Creator Of The elePHPant Vincent Pontier Reveals The True Story!". 7php.com.
+100	"PHP: ElePHPant".
+101	"tags — Manual". php.net. Retrieved 2014-02-17.
+102	"PHP: rfc:shortags". php.net. 2008-04-03. Retrieved 2014-05-08.
+103	"PHP: Basic syntax". The PHP Group. Retrieved 2008-02-22.
+104	"Basic Coding Standard". PHP Framework Interoperability Group. Retrieved 2016-01-03.
+105	"echo — Manual". php.net. Retrieved 2014-02-17.
+106	"Description of core php.ini directives — Manual". php.net. 2002-03-17. Retrieved 2014-02-17.
+107	"Your first PHP-enabled page". The PHP Group. Retrieved 2008-02-25.
+108	Bray, Tim; et al. (26 November 2008). "Processing Instructions". Extensible Markup Language (XML) 1.0 (Fifth Edition). W3C. Retrieved 2009-06-18.
+109	"Variables". The PHP Group. Retrieved 2008-03-16.
+110	"Instruction separation". The PHP Group. Retrieved 2008-03-16.
+111	"Comments". The PHP Group. Retrieved 2008-03-16.
+112	"Integers in PHP, running with scissors, and portability". MySQL Performance Blog. March 27, 2007. Retrieved 2007-03-28.
+113	"Types". The PHP Group. Retrieved 2008-03-16.
+114	"Strings". The PHP Group. Retrieved 2008-03-21.
+115	"SPL – StandardPHPLibrary". PHP.net. March 16, 2009. Retrieved 2009-03-16.
+116	"User-defined functions (PHP manual)". php.net. 2014-07-04. Retrieved 2014-07-07.
+117	"Variable functions (PHP manual)". php.net. 2014-07-04. Retrieved 2014-07-07.
+118	"create_function() (PHP manual)". php.net. 2014-07-04. Retrieved 2014-07-07.
+119	"Anonymous functions (PHP manual)". php.net. 2014-07-04. Retrieved 2014-07-07.
+120	Christian Seiler; Dmitry Stogov (2008-07-01). "Request for Comments: Lambda functions and closures". php.net. Retrieved 2014-07-07.
+121	"PHP 5 Object References". mjtsai.com. Retrieved 2008-03-16.
+122	"Classes and Objects (PHP 5)". The PHP Group. Retrieved 2008-03-16.
+123	"Object cloning". The PHP Group. Retrieved 2008-03-16.
+124	"Visibility (PHP Manual)". theserverpages.com. 2005-05-19. Retrieved 2010-08-26.
+125	"How do computer languages work?". Retrieved 2009-11-04.
+126	(Gilmore 2006, p. 43)
+127	"[VOTE] Integrating Zend Optimizer+ into the PHP distribution". news.php.net. Retrieved 2013-03-08.
+128	"Alternative PHP Cache". PHP.net. Retrieved 2013-09-21.
+129	"We are the 98.5% (and the 16%) « HipHop Virtual Machine". hhvm.com. December 2013. Retrieved 2014-02-23.
+130	"Announcement on GitHub removing HPHPc support". Retrieved 2013-05-24.
+131	"The PHP License, version 3.01". Retrieved 2010-05-20.
+132	"GPL-Incompatible, Free Software Licenses". Various Licenses and Comments about Them. Free Software Foundation. Retrieved 2011-01-03.
+133	"PHP: Function and Method listing — Manual". The PHP Group. Retrieved 2015-01-14.
+134	"Introduction — Manual". php.net. 2013-06-07. Retrieved 2013-06-13.
+135	Darryl Patterson (5 August 2004). "Simplify Business Logic with PHP DataObjects — O'Reilly Media". ibm.com. Retrieved 16 December 2014.
+136	"IBM — United States". IBM — United States. Retrieved 16 December 2014.
+137	"Five common PHP database problems". ibm.com. 2006-08-01. Retrieved 2013-06-13.
+138	"IBM Redbooks — Developing PHP Applications for IBM Data Servers". redbooks.ibm.com. Retrieved 16 December 2014.
+139	"php[architect] Magazine - The Journal for PHP Programmers". www.phparch.com.
+140	Krill, Paul (19 October 2005). "PHP catching on at enterprises, vying with Java". InfoWorld. Archived from the original on 13 July 2014.
+141	"Cross Reference: /PHP_5_4/ext/standard/". php.net. Archived from the original on 16 March 2012. Retrieved 16 December 2014.
+142	"Developing Custom PHP Extensions". devnewz.com. 2002-09-09. Archived from the original on 2008-02-18. Retrieved 2008-02-25.
+143	"Why Zephir?". zephir-lang.com. 2015-10-20. Retrieved 2015-12-14.
+144	"PHP Credits". php.net. Retrieved 2015-07-29.
+145	"Zend - Services - Certification - Php Certification". www.zend.com.
+146	"General Installation Considerations". php.net. Retrieved 2013-09-22.
+147	"News Archive: PHP 5.3.3 Released!". php.net. 2010-07-22.
+148	"FastCGI Process Manager (FPM)". php.net. Retrieved 2013-09-22.
+149	"Command line usage: Introduction". php.net. Retrieved 2013-09-22.
+150	"Command line usage: Differences to other SAPIs". php.net. Retrieved 2013-09-22.
+151	"General Installation Considerations". php.net. Retrieved 2013-09-22.
+152	"PHP: Apache 2.x on Microsoft Windows". php.net. Archived from the original on 2013-09-26. Retrieved 2013-09-22.
+153	"Command line usage: Introduction". php.net. Retrieved 2013-09-22.
+154	"Installing PHP-GTK 2". php.net. Retrieved 2013-09-22.
+155	"AWS SDK for PHP". aws.amazon.com. Retrieved 2014-03-06.
+156	"Windows Azure SDK for PHP — Interoperability Bridges and Labs Center". interoperabilitybridges.com. Archived from the original on 2014-03-20. Retrieved 2014-03-06.
+157	"Runtime configuration: Table of contents". php.net. Retrieved 2013-09-22.
+158	"php.ini directives: List of php.ini directives". php.net. Retrieved 2013-09-22.
+159	"Runtime configuration: The configuration file". PHP.net. Retrieved 2013-09-22.
+160	"php.ini directives: List of php.ini sections". PHP.net. Retrieved 2013-09-22.
+161	"Runtime configuration: Where a configuration setting may be set". PHP.net. Retrieved 2013-09-22.
+162	"PHP Manual Image Processing and GD;". php.net. Retrieved 2011-04-09.
+163	Archived 2008-06-11 at the Wayback Machine.[not in citation given]
+164	"PHP and MySQL". University of Alabama. Archived from the original on 2008-02-28. Retrieved 2008-02-25.
+165	"PHP Server-Side Scripting Language". Indiana University. 2007-04-04. Retrieved 2008-02-25.
+166	"JavaServer Pages Technology — JavaServer Pages Comparing Methods for Server-Side Dynamic Content White Paper". Sun Microsystems. Retrieved 2008-02-25.
+167	"Five simple ways to tune your LAMP application".
+168	"PHP: PHP Usage Stats". SecuritySpace. 2007-04-01. Retrieved 2008-02-24.
+169	"Usage of server-side programming languages for websites". W3Techs. 2010-10-29. Retrieved 2010-10-29.
+170	"Manual:Installation requirements#PHP". MediaWiki. 2010-01-25. Retrieved 2010-02-26. PHP is the programming language in which MediaWiki is written [...]
+171	Kempkens, Alex. "Joomla! — Content Management System to build websites & apps".
+172	"Server requirements of SilverStripe". Retrieved 13 October 2014. SilverStripe requires PHP 5.3.2+
+173	"About WordPress". Retrieved 2010-02-26. WordPress was [...] built on PHP
+174	"PHP and Drupal". Drupal.org. Retrieved 2010-06-13.
+175	"About". Moodle.org. Retrieved 2009-12-20.
+176	"PHP and Facebook | Facebook". Blog.facebook.com. Retrieved 2009-07-29.
+177	"PHP and Digg". O'Reilly. Retrieved 2010-06-13.
+178	"PHP 7 at Tumblr". Tumblr Engineering. 4 November 2016.
+179	"PHP 7 deployment at Dailymotion". Dailymotion engineering blog. 3 October 2016.
+180	"Taking PHP Seriously". Slack Engineering Blog. 12 October 2016.
+181	"PHP at the core: Extension structure". PHP.net. Retrieved 2013-09-22.
+182	"PHP at the core: The "counter" Extension – A Continuing Example". PHP.net. Retrieved 2013-09-22.
+183	"Extension Writing Part I: Introduction to PHP and Zend". Zend Technologies. 2005-03-01. Retrieved 2013-09-22.
+184	"Extension Writing Part II: Parameters, Arrays, and ZVALs". Zend Technologies. 2005-06-06. Retrieved 2013-09-22.
+185	"Extension Writing Part II: Parameters, Arrays, and ZVALs (continued)". Zend Technologies. 2005-06-06. Retrieved 2013-09-22.
+186	"Extension Writing Part III: Resources". Zend Technologies. 2006-05-12. Retrieved 2013-09-22.
+187	"Wrapping C++ Classes in a PHP Extension". Zend Technologies. 2009-04-22. Retrieved 2013-09-22.
+188	"Extending PHP with C++?". Stack Overflow. Retrieved 2013-09-22.
+189	"How can I use C++ code to interact with PHP?". Stack Overflow. Retrieved 2013-09-22.
+190	Golemon, Sara (2006). Extending and Embedding PHP. ISBN 978-0-672-32704-9.
+191	"Bug Request #46919: Multi threading". PHP.net. Retrieved 2013-09-22.
+192	"pthreads: Introduction (PHP Manual)". PHP.net. Retrieved 2013-09-22.
+193	"PECL :: Package :: pthreads". pecl.php.net. Retrieved 2014-02-09.
+194	Ide, Andy (2013-01-31). "PHP just grows & grows". Retrieved 2013-04-01.
+195	"National Vulnerability Database (NVD) Search Vulnerabilities". Retrieved 2014-03-19. [permanent dead link]
+196	"PHP-related vulnerabilities on the National Vulnerability Database". 2012-07-05. Retrieved 2013-04-01.
+197	"PHP Taint Mode RFC".
+198	"Developer Meeting Notes, Nov. 2005".
+199	"Taint mode decision, November 2007". Archived from the original on 2009-02-26.
+200	"Hardened-PHP Project". 2008-08-15.
+201	"Security: Using Register Globals". PHP Manual. PHP.net. Retrieved 2013-09-22.
+202	"Magic Quotes". PHP Manual. PHP.net. Retrieved 2014-01-17.
+203	"'engine' configuration directive". PHP: Runtime Configuration. PHP.net. Retrieved 2014-02-13.
+204	"PHP Security Exploit With GIF Images". 2007-06-22. Retrieved 2013-09-22.
+205	"PHP security exploit with GIF images". PHP Classes blog. 2007-06-20. Retrieved 2013-09-22.
+206	"Passing Malicious PHP Through getimagesize()". 2007-06-04. Archived from the original on 2013-09-21. Retrieved 2013-09-22.
+207	"'enable_dl' configuration directive". PHP: Runtime Configuration. PHP.net. Retrieved 2014-02-13.
+208	"PHP function reference: dl()". PHP.net. Retrieved 2013-09-22.
+209	"My host won't fix their Trojan". WebHosting Talk. Retrieved 2013-09-22.
+210	Raz0r. "Simple Machines Forum <= 2.0.3 Admin Password Reset".
+211	Nibble Security. "TYPO3-SA-2010-020, TYPO3-SA-2010-022 EXPLAINED".
+212	Ahack.ru. "Криптостойкость и небезопасное сравнение".
+213	"Comparison operators". PHP.net.
+214	Pawel Krawczyk (2013). "Most common attacks on web applications". IPSec.pl. Retrieved 2015-04-15.
+215	Pawel Krawczyk (2013). "So what are the "most critical" application flaws? On new OWASP Top 10". IPSec.pl. Retrieved 2015-04-15.
